@@ -12,6 +12,7 @@ body {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
   display: flex;
   background-color:  #f2f2f2;
   margin: auto;
@@ -26,7 +27,6 @@ body {
 }
 
 .logo__place_header {
-  display: flex;
   position: absolute;
   top: 30px;
   left: 64px;
@@ -84,16 +84,20 @@ body {
   margin: 100px 0 100px;
   display: flex;
   justify-content: center;
-  align-items: space-between;
+  
 }
 
 .two-columns {
   display: flex;
   width: 80%;
+  align-items: space-between;
+  column-gap: 10%;
+
+  
 }
 
 .two-colums__brief {
-  margin: 0 100px 0 0;
+  margin: 0;
   padding: 0;
   width: 175px;
   line-height: 1.2;
@@ -103,19 +107,15 @@ body {
 }
 
 .two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  row-gap: 30px;
   width: 80%;
   min-width: 784px;
 }
 
 .two-colums__paragraph {
-  margin: 0 0 30px;
-  padding: 0;
-  line-height: 34px;
-  font-weight: normal;
-  font-size: 24px; 
- }
-
- .two-colums__paragraph:last-child {
   margin: 0;
   padding: 0;
   line-height: 34px;
@@ -129,6 +129,7 @@ body {
 
 .digits {
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .section-title {
@@ -142,7 +143,6 @@ body {
 
 .section-title__theme_white {
   color: #000000;
-  padding-top: 100px;
  }
 
  .section-title__theme_dark {
@@ -152,7 +152,7 @@ body {
  }
 
  .section-subtitle {
-  margin: 0 20% 60px;
+  margin: 0 20%;
   padding: 0;
   text-align: center;
   line-height: 34px;
@@ -179,7 +179,7 @@ body {
 .table__cell_theme_white {
   width: 250px;
   color:  #000000;
-  margin: 60 px 0, 0;
+  margin-top: 60px;
 }
 
 .table__cell_theme_dark {
@@ -284,45 +284,41 @@ body {
 }
 
 .footer {
-  padding: 0 60px 40px 0;
   background-color: #1f1f1f;
 }
  
 .footer__columns {
   display: flex;
   color: #ffffff;
-  position: relative;
-  margin:0 5% 0;
-  min-height: 350px;
+  justify-content: space-between;
+  padding: 60px 5% 40px;
+    
 }
 
 .footer__column_content_copyright {
+  display: flex;
   flex-basis: 711px;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;
 }
  
 .logo__place_footer {
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin: 0;
+  padding: 0;
   z-index: 1;
 }
 
 .footer__author {
   margin: 18px 0;
   padding: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
 
 .footer__column_content_info {
-  position: absolute;
-  top: 0;
-  right: 25%;
-  height: 100%;
+  
 }
 
 .footer__column-heading {
@@ -350,10 +346,7 @@ body {
 }
 
 .footer__column_content_social {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
+  
 }
 
 .footer__social-icon {
