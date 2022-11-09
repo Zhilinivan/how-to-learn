@@ -261,7 +261,7 @@ body {
   right: 48px;
   color: #2f80ed;
   line-height: 51px;
-  font-size: 36px; 
+  font-size: 36px;
   font-weight: normal;
   text-decoration: none;
 }
@@ -276,7 +276,7 @@ body {
 
 .kaufman__triangle {
   position: absolute;
-  top: 0;  
+  top: 0;
   right: -210px;
   width: 877px;
   height: 877px;
@@ -303,7 +303,7 @@ body {
 .logo__place_footer {
   position: absolute;
   top: 0;
-  left: 0; 
+  left: 0;
   z-index: 1;
 }
 
@@ -314,7 +314,7 @@ body {
   bottom: 0;
   left: 0;
   line-height: 25px;
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: normal;
 }
 
@@ -345,7 +345,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   line-height: 30px;
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: normal;
 }
 
