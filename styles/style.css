@@ -1,21 +1,16 @@
-body {
-}
-
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .header {
-  height: 100vh;
+  height: 100vh;          /* без это изображения указанных размеров не помещаются*/
   min-height: 600px;
   max-height: 756px;
-  position: relative;
   display: flex;
+  position: relative;
   background-color:  #f2f2f2;
-  margin: auto;
 }
 
 .logo {
@@ -23,31 +18,28 @@ body {
   padding: 0;
   font-size: 28px;
   height: 32px;
-  width: 228;    
+  width: 228;   
+  z-index: 2; 
 }
 
 .logo__place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-  z-index: 1;
 }
 
 .header__title {
   margin: 0 0 0 64px;
   padding: 0;
-  display: flex;
   align-self: center;
   width: 730px;
   line-height: 96px;
   font-weight: 600;
   font-size: 102px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__subtitle {
-  margin: 0;
-  padding: 0;
   position: absolute;
   width: 388px;
   bottom: 30px;
@@ -55,6 +47,7 @@ body {
   line-height: 25px;
   font-weight: normal;
   font-size: 18px; 
+  z-index: 2;
 }
 
 .header__link {
@@ -80,20 +73,21 @@ body {
   background-color: #2f80ed;
 }
 
+.content {
+
+}
+
 .description { 
-  margin: 100px 0 100px;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
-  
 }
 
 .two-columns {
   display: flex;
   width: 80%;
-  align-items: space-between;
+  justify-content: space-between;
   column-gap: 10%;
-
-  
 }
 
 .two-colums__brief {
@@ -109,7 +103,7 @@ body {
 .two-columns__main-text {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
+  justify-content: space-between;
   row-gap: 30px;
   width: 80%;
   min-width: 784px;
@@ -128,13 +122,13 @@ body {
 }
 
 .digits {
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding: 100px 0 100px;
 }
 
 .section-title {
-  margin: 0 20% 20px;
+  margin: 0 auto 20px;
   padding: 0;
+  width: 60%;
   text-align: center;
   line-height: 1.15;
   font-weight: 600;
@@ -142,18 +136,18 @@ body {
 }
 
 .section-title__theme_white {
+  
   color: #000000;
  }
 
  .section-title__theme_dark {
   color: #ffffff;
-  padding-top: 90px;
-  z-index: 2;
  }
 
  .section-subtitle {
-  margin: 0 20%;
+  margin: 0 auto 0;
   padding: 0;
+  width: 60%;
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -173,23 +167,30 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
-  margin: 0 auto;
+}
+
+.table__theme_white {
+  margin: 60px auto 0;
+  row-gap: 60px;
+}
+
+.table__theme_dark {
+  margin: 80px auto 0;
+  row-gap: 80px;
 }
 
 .table__cell_theme_white {
   width: 250px;
   color:  #000000;
-  margin-top: 60px;
 }
 
 .table__cell_theme_dark {
   width: 200px;
   color: #ffffff;
-  margin-top: 80px;
 }
 
 .table__heading {
-  margin: 0 0 20px;
+  margin: 0;
   padding: 0;
   line-height: 1.15;
   font-size: 24px;
@@ -202,7 +203,6 @@ body {
 
 .table__heading_theme_dark {
   color:#ffffff;
-  z-index: 2;
 }
 
 .table__text {
@@ -219,7 +219,6 @@ body {
 
 .table__text_theme_dark {
   color: #ffffff;
-  z-index: 2;
 }
 
 .feynman {
@@ -267,11 +266,11 @@ body {
 }
 
 .kaufman {
+  padding: 90px 0 100px;  /* нижний отступ чуть больше, не помещается треугольник */
   position: relative;
-  padding-bottom: 90px;
   background-color:  #1f1f1f;
   z-index: -2;
-  overflow: hidden; 
+  
 }
 
 .kaufman__triangle {
@@ -284,6 +283,7 @@ body {
 }
 
 .footer {
+  padding: 60px 0 40px;
   background-color: #1f1f1f;
 }
  
@@ -291,7 +291,7 @@ body {
   display: flex;
   color: #ffffff;
   justify-content: space-between;
-  padding: 60px 5% 40px;
+  padding: 0 5% 0;
     
 }
 
@@ -304,9 +304,7 @@ body {
 }
  
 .logo__place_footer {
-  margin: 0;
-  padding: 0;
-  z-index: 1;
+  color: #ffffff;
 }
 
 .footer__author {
@@ -315,10 +313,6 @@ body {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-}
-
-.footer__column_content_info {
-  
 }
 
 .footer__column-heading {
@@ -345,11 +339,4 @@ body {
   font-weight: normal;
 }
 
-.footer__column_content_social {
-  
-}
-
-.footer__social-icon {
-  
-}
 
