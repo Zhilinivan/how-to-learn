@@ -34,7 +34,7 @@
 }
 
 .header__title {
-  margin: 0 0 64px;
+  margin: 0 0 0 64px;
   padding: 0;
   align-self: center;
   max-width: 730px;
@@ -312,6 +312,8 @@
 }
 
 .footer__column_content_copyright {
+  display: flex;
+  justify-content: space-between;
   flex-direction: column;
   flex-basis: 711px;
   min-height: 250px;
