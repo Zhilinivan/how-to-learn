@@ -1,4 +1,5 @@
-@import url(../blocks);
+@import url(../vendor/normalize.css);
+
 @import url(../blocks/page/page.css);
 @import url(../blocks/page/__link-opacity/page__link-opacity.css);
 
